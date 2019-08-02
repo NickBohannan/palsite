@@ -27,9 +27,56 @@ body {
     margin-left: 15px;
 }
 
+.dropdown {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: inline;
+}
+  
+.dropdown .product-dropdown {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: 250px;
+    top: 134px;
+    background-color: #afafaf;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 5px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+.dropdown-content a:hover {
+    background-color: rgb(121, 121, 121);
+}
+  
+
 .header-link {
-    padding-left: 25px;
-    padding-right: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;

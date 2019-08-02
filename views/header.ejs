@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/style.css">
+    <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous"
+    />
     <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
     <title>PAL Health Technologies | Home</title>
   </head>
@@ -13,15 +19,42 @@
         </div>
         <div class="nav-bar-container">
             <div class="link-container">
-                <a class="header-link" href="/index">HOME</a>
+                <a class="header-link" href="/">HOME</a>
                 <a class="header-link" href="/about">ABOUT</a>
-                <a class="header-link" href="">PRODUCTS</a>
+                <div class="dropdown">
+                    <button class="product-dropdown" onclick="toggleClass()">
+                        PRODUCTS
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="dropdown-content" id="my-dropdown">
+                        <a href="">Link 1</a>
+                        <a href="">Link 2</a>
+                        <a href="">Link 3</a>
+                        <a href="">Link 4</a>
+                    </div>
+                </div>
                 <a class="header-link" href="/resources">RESOURCES</a>
                 <a class="header-link" href="/social">SOCIAL</a>
                 <a class="header-link" href="/contact">CONTACT</a>
-                <a class="header-link" href="">LOGIN</a>
+                <a class="header-link" href="">PORTAL LOGIN</a>
             </div>
         </div>
     </div>
   </body>
+  <script>
+    function toggleClass() {
+        document.getElementById("my-dropdown").classList.toggle("show");
+    }
+  
+    window.onclick = function(e) {
+        if (!e.target.matches('.product-dropdown')) {
+        var myDropdown = document.getElementById("my-dropdown");
+            if (myDropdown.classList.contains('show')) {
+                myDropdown.classList.remove('show');
+            }
+        }
+    }
+  
+  
+  </script>
 </html>
