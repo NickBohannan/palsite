@@ -49,9 +49,11 @@ body {
     display: none;
     position: absolute;
     left: 250px;
-    top: 134px;
-    background-color: #afafaf;
+    top: 136px;
+    background-color: #2b6597;
     min-width: 260px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -80,4 +82,12 @@ body {
     text-decoration: none;
     color: white;
     font-family: 'Roboto', sans-serif;
+}
+
+.link-container a:hover, .link-container a:focus {
+    color: #f1c534;
+}
+
+.product-dropdown:hover, .product-dropdown:focus {
+    color: #f1c534;
 }
