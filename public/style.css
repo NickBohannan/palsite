@@ -22,14 +22,26 @@ body {
     border-bottom: 2px solid silver;
 }
 
+.header-link {
+    margin-left: 25px;
+    margin-right: 25px;
+    text-decoration: none;
+    color: white;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .link-container {
-    margin-top: 5px;
+    margin-top: 3px;
     margin-left: 15px;
 }
 
 .dropdown {
     color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     margin-left: 25px;
     margin-right: 25px;
     display: inline;
@@ -76,13 +88,7 @@ body {
 }
   
 
-.header-link {
-    margin-left: 25px;
-    margin-right: 25px;
-    text-decoration: none;
-    color: white;
-    font-family: 'Roboto', sans-serif;
-}
+
 
 .link-container a:hover, .link-container a:focus {
     color: #f1c534;
