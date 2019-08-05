@@ -10,9 +10,9 @@
     <div class="body-image">
         <img src="BodyImage.png" />
     </div>
+    <div id="page-title">Contact Us</div>
     <div class="main-page-container">
         <div class="contact-container">
-            <h1>Contact Us</h1>
             <p>Whether you’re a patient or a physician, we would love to hear from you!  Please fill out the form below and one of our expert staff members will contact you within 24 hours (during PAL normal business week). We look forward to hearing from you!</p>
             <div class="contact-form-container">
                 <form action="/contact" class="general-contact">
@@ -40,11 +40,11 @@
                         <label for="form-provider" class="general-contact-form-label">Are you a provider?</label>
                         <div class="form-row">
                             <input type="radio" id="form-provider" name="provider" value="I am a provider." />
-                            <label for="form-provider">I am a provider.</label>
+                            <label for="form-provider" id="provider-label">I am a provider.</label>
                         </div>
                         <div class="form-row">
                             <input type="radio" id="form-patient" name="patient" value="I am a patient." />
-                            <label for="form-patient">I am a patient.</label>
+                            <label for="form-patient" id="patient-label">I am a patient.</label>
                         </div>
                     </div>
                     <input type="submit" id="form-submit" />
@@ -54,7 +54,8 @@
         <div id="contact-right">
             <div id="hours-container">
                 <div id="hours-title">Hours of Operation</div>
-                <div id="hours">Monday – Friday: 7:30 a.m. – 5:30 p.m. Central Standard Time</div>
+                <div id="hours">Monday – Friday: 7:30 a.m. – 5:30 p.m.<br>
+                Central Standard Time</div>
             </div>
             <div id="mailing-container">
                 <div id="mailing-title">Mailing Address</div>
