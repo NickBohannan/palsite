@@ -1,6 +1,17 @@
 body {
     margin: 0px;
     background-color: #041026;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+}
+
+.body-image {
+    position: fixed;
+    z-index: 0;
+    right: 0px;
+    bottom: 0px;
 }
 
 .header-container {
@@ -8,10 +19,112 @@ body {
     background-color: #041026;
 }
 
+.main-page-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    position: relative;
+    z-index: 1;
+    width: 40%;
+    margin: 25px 50px 25px 50px;
+}
+
+.contact-container h1 {
+    text-align: center;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-submit {
+    width: 150px;
+    height: 50px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    background-color: #2b6597;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+#form-submit:hover {
+    cursor: pointer;
+}
+
+#form-name,
+#form-email,
+#form-phone {
+    width: 400px;
+    padding: 5px;
+}
+
+#form-subject {
+    width: 500px;
+    padding: 5px;
+}
+
+#form-message {
+    width: 700px;
+    border-radius: 10px;
+    padding: 5px;
+    border: none;
+}
+
+.form-column label {
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+#contact-right {
+    margin: 100px 50px 25px 50px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#hours-title,
+#mailing-title,
+#phone-title,
+#fax-title {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+#hours,
+#mailing-address,
+#phone-number,
+#fax-number {
+    margin-bottom: 50px;
+}
+
+
 .logo-container {
     position: sticky;
     z-index: 1;
     height: 100px;
+}
+
+.form-column input {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    font-size: 15px;
 }
 
 .social-icons-container {
@@ -20,12 +133,6 @@ body {
     right: 50px;
     color: white;
     font-size: 25px;
-}
-
-.body-image {
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
 }
 
 .social-icons-container i {
@@ -84,6 +191,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
+    transition: all .5s ease;
     left: 250px;
     top: 35px;
     background-color: #2b6597;
@@ -103,6 +211,7 @@ body {
     color: black;
     padding: 5px 10px;
     text-decoration: none;
+    transition: all .5s ease;
     display: block;
     text-align: left;
   }
@@ -110,9 +219,6 @@ body {
 .dropdown-content a:hover {
     background-color: rgb(121, 121, 121);
 }
-  
-
-
 
 .link-container a:hover, .link-container a:focus {
     color: #f1c534;
