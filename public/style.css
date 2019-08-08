@@ -185,6 +185,28 @@ body {
     margin-left: 15px;
 }
 
+#orthotic-menu {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 263px;
+    width: 300px;
+    background-color: #2b6597;
+    transition: all .5s ease;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+#orthotic-hover:hover + #orthotic-menu {
+    display: block;
+}
+
+#orthotic-menu:hover {
+    display: block;
+}
+
 .dropdown {
     color: white;
     font-family: futura-pt, sans-serif;
