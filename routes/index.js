@@ -17,6 +17,10 @@ router.get("/social", (req, res) => {
     res.render("social")
 })
 
+router.get("/orthoses", (req, res) => {
+    res.render("orthoses")
+})
+
 router.get("/contact", (req, res) => {
     res.render("contact")
 })

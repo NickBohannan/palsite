@@ -30,7 +30,7 @@ body {
     justify-content: center;
 }
 
-#page-title {
+.page-title {
     text-align: center;
     z-index: 1;
     width: 100%;
@@ -265,4 +265,8 @@ body {
 
 .product-dropdown:hover, .product-dropdown:focus {
     color: #f1c534;
+}
+
+#orthoses-copy-container {
+    width: 60%;
 }
