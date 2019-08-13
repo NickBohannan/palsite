@@ -1,79 +1,88 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/style.css">
     <title>PAL Health Technologies | Contact</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <%- include('header') %>
     <div class="body-image">
         <img src="BodyImage.png" />
     </div>
-    <div class="page-title">Contact Us</div>
     <div class="main-page-container">
-        <div class="contact-container">
-            <p>Whether you’re a patient or a physician, we would love to hear from you!  Please fill out the form below and one of our expert staff members will contact you within 24 hours (during PAL normal business week). We look forward to hearing from you!</p>
-            <div class="contact-form-container">
-                <form action="/contact" class="general-contact">
-                    <div class="form-column">
-                        <label for="form-name" class="general-contact-form-label">Full Name (required)</label>
-                        <input type="text" id="form-name" name="name" />
-                    </div>
-                    <div class="form-column">
-                        <label for="form-email" class="general-contact-form-label">Email (required)</label>
-                        <input type="text" id="form-email" name="email" />
-                    </div>
-                    <div class="form-column">
-                        <label for="form-phone" class="general-contact-form-label">Phone (required)</label>
-                        <input type="text" id="form-phone" name="phone" />
-                    </div>
-                    <div class="form-column">
-                        <label for="form-subject" class="general-contact-form-label">Subject</label>
-                        <input type="text" id="form-subject" name="subject" />
-                    </div>
-                    <div class="form-column">
-                        <label for="form-message" class="general-contact-form-label">Message</label>
-                        <textarea type="text" rows="8" cols="50" id="form-message" name="message"></textarea>
-                    </div>
-                    <div class="form-column">
-                        <label for="form-provider" class="general-contact-form-label">Are you a provider?</label>
-                        <div class="form-row">
-                            <input type="radio" id="form-provider" name="provider" value="I am a provider." />
-                            <label for="form-provider" id="provider-label">I am a provider.</label>
+        <div class="page-title">Contact Us</div>
+        <div id="contact-contact-right-container">
+            <div class="contact-container">
+                <p>Whether you’re a patient or a physician, we would love to hear from you! Please fill out the form
+                    below
+                    and one of our expert staff members will contact you within 24 hours (during PAL normal business
+                    week).
+                    We look forward to hearing from you!</p>
+                <div class="contact-form-container">
+                    <form action="/contact" class="general-contact">
+                        <div class="form-column">
+                            <label for="form-name" class="general-contact-form-label">Full Name (required)</label>
+                            <input type="text" id="form-name" name="name" />
                         </div>
-                        <div class="form-row">
-                            <input type="radio" id="form-patient" name="patient" value="I am a patient." />
-                            <label for="form-patient" id="patient-label">I am a patient.</label>
+                        <div class="form-column">
+                            <label for="form-email" class="general-contact-form-label">Email (required)</label>
+                            <input type="text" id="form-email" name="email" />
                         </div>
-                    </div>
-                    <input type="submit" id="form-submit" />
-                </form>
-            </div>
-        </div>
-        <div id="contact-right">
-            <div id="hours-container">
-                <div id="hours-title">Hours of Operation</div>
-                <div id="hours">Monday – Friday: 7:30 a.m. – 5:30 p.m.<br>
-                Central Standard Time</div>
-            </div>
-            <div id="mailing-container">
-                <div id="mailing-title">Mailing Address</div>
-                <div id="mailing-address">
-                    PAL Health Technologies<br>
-                    1805 Riverway Dr.<br>
-                    Pekin, IL 61554<br>
+                        <div class="form-column">
+                            <label for="form-phone" class="general-contact-form-label">Phone (required)</label>
+                            <input type="text" id="form-phone" name="phone" />
+                        </div>
+                        <div class="form-column">
+                            <label for="form-subject" class="general-contact-form-label">Subject</label>
+                            <input type="text" id="form-subject" name="subject" />
+                        </div>
+                        <div class="form-column">
+                            <label for="form-message" class="general-contact-form-label">Message</label>
+                            <textarea type="text" rows="8" cols="50" id="form-message" name="message"></textarea>
+                        </div>
+                        <div class="form-column">
+                            <label for="form-provider" class="general-contact-form-label">Are you a provider?</label>
+                            <div class="form-row">
+                                <input type="radio" id="form-provider" name="provider" value="I am a provider." />
+                                <label for="form-provider" id="provider-label">I am a provider.</label>
+                            </div>
+                            <div class="form-row">
+                                <input type="radio" id="form-patient" name="patient" value="I am a patient." />
+                                <label for="form-patient" id="patient-label">I am a patient.</label>
+                            </div>
+                        </div>
+                        <input type="submit" id="form-submit" />
+                    </form>
                 </div>
-
             </div>
-            <div id="phone-fax-container">
-                <div id="phone-title">Phone</div>
-                <div id="phone-number">800.223.2957</div>
-                <div id="fax-title">Fax</div>
-                <div id="fax-number">866.381.3850</div>
+            <div id="contact-right">
+                <div id="hours-container">
+                    <div id="hours-title">Hours of Operation</div>
+                    <div id="hours">Monday – Friday: 7:30 a.m. – 5:30 p.m.<br>
+                        Central Standard Time
+                    </div>
+                </div>
+                <div id="mailing-container">
+                    <div id="mailing-title">Mailing Address</div>
+                    <div id="mailing-address">
+                        PAL Health Technologies<br>
+                        1805 Riverway Dr.<br>
+                        Pekin, IL 61554<br>
+                    </div>
+                </div>
+                <div id="phone-fax-container">
+                    <div id="phone-title">Phone</div>
+                    <div id="phone-number">800.223.2957</div>
+                    <div id="fax-title">Fax</div>
+                    <div id="fax-number">866.381.3850</div>
+                </div>
             </div>
         </div>
     </div>
 
-  </body>
+</body>
+
 </html>

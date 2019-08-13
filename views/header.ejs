@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="/style.css">
-    <link
-        rel="stylesheet"
-        href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
-        crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.typekit.net/ghp0ioo.css">
     <title>PAL Health Technologies | Home</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="header-container">
         <div class="logo-container">
             <img src="PortalHeader-01.png" />
             <div class="social-icons-container">
                 <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-f"></i>
+                <a href="http://www.facebook.com/palhealthtech">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
                 <i class="fab fa-linkedin-in"></i>
                 <i class="fab fa-youtube"></i>
             </div>
@@ -52,20 +52,21 @@
             </div>
         </div>
     </div>
-  </body>
-  <script>
+</body>
+<script>
     function toggleClass() {
         document.getElementById("my-dropdown").classList.toggle("show");
     }
 
-    window.onclick = function(e) {
+    window.onclick = function (e) {
         if (!e.target.matches('.product-dropdown')) {
-        var myDropdown = document.getElementById("my-dropdown");
+            var myDropdown = document.getElementById("my-dropdown");
             if (myDropdown.classList.contains('show')) {
                 myDropdown.classList.remove('show');
             }
         }
     }
-  
-  </script>
+
+</script>
+
 </html>

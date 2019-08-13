@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="/style.css">
-    <title>PAL Health Technologies | Social</title>
-  </head>
-  <body>
-    <%- include('header') %>
-    <div class="main-page-container">
-        
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <title>PAL Health Technologies | Social</title>
+
+</head>
+
+<body>
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+  <%- include('header') %>
+  <div class="main-page-container">
+    <div class="page-title">Announcements</div>
+    <div class="fb-page" data-href="https://www.facebook.com/palhealthtech" data-tabs="timeline" data-width="500"
+      data-height="500" data-small-header="false" data-adapt-container-width="false" data-hide-cover="false"
+      data-show-facepile="true">
+      <blockquote cite="https://www.facebook.com/facebook" class="fb-xfbml-parse-ignore"><a
+          href="https://www.facebook.com/facebook">Facebook</a></blockquote>
     </div>
-    <div class="body-image">
-        <img src="BodyImage.png" />
-    </div>
-  </body>
+  </div>
+  <div class="body-image">
+    <img src="BodyImage.png" />
+  </div>
+</body>
+
 </html>
