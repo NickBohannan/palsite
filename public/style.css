@@ -16,6 +16,7 @@ body {
     z-index: 1;
     width: 100%;
     height: 1000px;
+    top: -140px;
     background-color: #041026;
 }
 
@@ -311,28 +312,28 @@ body {
 #copy-container-intro {
     width: 800px;
     position: absolute;
-    top: 100px;
+    top: 200px;
     left: 5%;
 }
 
 #copy-container-2 {
     width: 800px;
     position: absolute;
-    top: 100px;
+    top: 200px;
     right: 5%;
 }
 
 #copy-container-3 {
     width: 800px;
     position: absolute;
-    top: 100px;
+    top: 200px;
     left: 5%;
 }
 
 #copy-container-4 {
     width: 800px;
     position: absolute;
-    top: 100px;
+    top: 200px;
     right: 5%;
 }
 
@@ -450,6 +451,7 @@ body {
     text-align: center;
     border-top: 1px solid white;
     margin-top: 20px;
+    padding-top: 2px;
 }
 
 #footer-menu-container {
